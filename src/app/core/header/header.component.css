@@ -36,10 +36,6 @@ nav .right a {
   cursor: pointer;
 }
 
-.external-link:hover {
-  text-decoration: underline; /* opzionale: effetto hover visivo */
-}
-
 nav .right a:last-child {
   background-color: var(--text-color);
   color: var(--background-color);

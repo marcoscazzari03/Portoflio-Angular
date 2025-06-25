@@ -1,0 +1,34 @@
+<section class="hero-section">
+  <div class="text">
+    <h2>SEO, UX/UI, sviluppo web e altro ancora</h2>
+    <h3>Il <span class="typing-text"></span></h3>
+    <h1>porta risultati concreti</h1>
+    <div class="typing-container"></div>
+    <p>
+      <strong>Junior Web Developer</strong> appassionato di tecnologia e
+      <em>sviluppo web</em> Affronto ogni progetto con entusiasmo, curiosità e
+      determinazione, sempre alla ricerca di nuove sfide per crescere sia a
+      livello tecnico che umano. Collaboro con spirito di squadra e metto al
+      servizio del team le mie competenze per raggiungere insieme obiettivi
+      concreti.
+    </p>
+
+<div class="links">
+  <a
+    *ngFor="let link of links"
+    [href]="link.href"
+    [attr.download]="link.download ? '' : null"
+    [class.cv]="link.download"
+    class="btn-header"
+  >
+    <i [class]="link.icon"></i>
+    <span>{{ link.label }}</span>
+  </a>
+</div>
+  </div>
+
+  <div class="headshot">
+    <img src="assets/images/Marco.jpg" alt="Marco Scazzari" />
+  </div>
+  <app-go-top></app-go-top>
+</section>

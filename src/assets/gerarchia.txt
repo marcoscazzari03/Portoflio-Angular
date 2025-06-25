@@ -1,0 +1,52 @@
+src/app/
+│
+├── app.component.*
+├── app-routing.module.ts
+├── core/     
+│   ├── header/                  ← Navbar globale
+│   │   ├── header.component.ts
+│   │   ├── header.component.html
+│   │   └── header.component.scss
+│   └── footer/                  ← Footer globale
+│       ├── footer.component.ts
+│       ├── footer.component.html
+│       └── footer.component.scss
+│
+├── home/                ← pagina principale
+│   ├── home.component.ts
+│   ├── hero/
+│   │   └── hero.component.ts
+|   |   ├── hero.component.html
+|   |   ├── hero.component.css
+|   |   └── hero-links.ts
+|   |
+│   ├── services/
+│   │   └── services.component.ts
+|   |   ├── services.component.html
+|   |   └── services.component.css
+|   |
+│   ├── skills/
+│   │   └── skills.component.ts
+|   |   ├── skills.component.html
+|   |   └── skills.component.css
+|   |
+│   ├── projects/
+│   │   └── projects.component.ts
+|   |   ├── projects.component.html
+|   |   └── projects.component.css
+|   |
+│   ├── testimony/
+│   │   └── testimony.component.ts
+|   |   ├── testimony.component.html
+|   |   └── testimony.component.css
+|   |
+│   └── contact/
+│   │   └── contact.component.ts
+|   |   ├── contact.component.html
+|   |   └── contact.component.css
+|   | 
+├── shared/     
+│   ├── gotop/                  ← Funzione gotop
+│   │   ├── go-top.component.ts
+│   │   ├── go-top.component.html
+│   │   └── go-top.component.scss
