@@ -9,4 +9,4 @@ import { HeaderComponent } from './header/header.component';
   styleUrl: './app.component.css',
 })
 
-export class AppComponent {}
+export class AppComponent{}
