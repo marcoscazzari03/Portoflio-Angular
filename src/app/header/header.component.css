@@ -1,0 +1,99 @@
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+  background-color: transparent;
+  backdrop-filter: blur(10px); /* opzionale */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Link sinistra */
+nav .left a {
+  color: var(--text-color);
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* Link destra */
+nav .right {
+  display: flex;
+  align-items: center;
+}
+
+nav .right a {
+  color: var(--text-color);
+  margin: 0 10px;
+}
+
+nav .right a:last-child {
+  background-color: var(--text-color);
+  color: var(--background-color);
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+nav .right a span {
+  margin-left: 5px;
+}
+
+/* Media query: max-width 1023px */
+@media (max-width: 1023px) {
+  nav.scrolled {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0 50px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  nav.scrolled .left,
+  nav.scrolled .right {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  nav.scrolled .right a {
+    font-size: inherit;
+    margin: 0 10px;
+  }
+}
+
+/* Media query: max-width 768px */
+@media (max-width: 768px) {
+  nav {
+    position: relative !important;
+    height: 60px;
+    padding: 0 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav .left a {
+    font-size: 18px;
+  }
+
+  nav .right {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  nav .right a {
+    font-size: 14px;
+    margin: 5px 10px 0 0;
+  }
+}
