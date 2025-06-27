@@ -1,1 +1,25 @@
-<p>services works!</p>
+<section class="services" id="servizi">
+  <div class="container">
+    <div class="header">
+      <div class="stars">★★★★★</div>
+      <h2>I Miei Servizi</h2>
+      <p>
+        Sono un web designer specializzato nella creazione e ottimizzazione di
+        siti web moderni, curati nei dettagli e pensati per offrire la massima
+        funzionalità. Offro una gamma completa di servizi, tra cui:
+      </p>
+    </div>
+    <div class="service-grid">
+      <div class="service-box" *ngFor="let service of services">
+        <h4 class="label ux" [ngClass]="service.type">{{ service.label }}</h4>
+        <h3>{{ service.title }}</h3>
+        <p>{{ service.description }}</p>
+        <a href="Servizi/UXUI/uxui.html" class="learn-more">Scopri</a>
+      </div>
+    </div>
+    <!-- DA IMPLEMENTARE -->
+    <!-- <div class="btn-wrapper">
+          <a href="Servizi/servizi.html" class="view-all">Vedi tutti i servizi ></a>
+        </div> --> 
+  </div>
+</section>
