@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgFor } from '@angular/common';
+import { Type } from '@angular/core';
 
 import { GoTopComponent } from '../../shared/go-top/go-top.component';
 import { HERO_LINKS } from './hero-links';
@@ -19,6 +20,7 @@ export class HeroComponent implements OnInit {
   currentWordIndex = 0;
   currentCharIndex = 0;
   isDeleting = false;
+  static HeaderComponent: readonly any[] | Type<any>;
 
   ngOnInit(): void {
     this.typeEffect();

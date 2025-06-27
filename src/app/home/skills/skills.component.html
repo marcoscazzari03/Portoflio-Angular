@@ -1,0 +1,16 @@
+<section id="skills" class="skills-section">
+  <h2>Skills</h2>
+  <div class="text">
+    Qui sotto troverai una panoramica delle mie competenze tecniche e
+    professionali, sviluppate nel corso degli anni grazie a progetti concreti e
+    tanta passione. Queste skill mi permettono di creare soluzioni efficaci e
+    creative nel mondo del web.
+  </div>
+
+  <div class="cells">
+    <div class="cell" *ngFor="let skill of skills">
+      <img [src]="skill.image" [alt]="skill.alt" />
+      <span>{{ skill.name }}</span>
+    </div>
+  </div>
+</section>
