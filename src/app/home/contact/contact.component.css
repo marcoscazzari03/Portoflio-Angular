@@ -48,3 +48,27 @@
 .contact-section .group form button:hover {
   filter: brightness(.9);
 }
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+input.ng-invalid.ng-touched,
+textarea.ng-invalid.ng-touched {
+  border: 1px solid red;
+}
+
+.error {
+  color: red;
+  font-size: 0.85rem;
+  margin-bottom: 12px;
+}
+
+.success-message {
+  color: green;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
