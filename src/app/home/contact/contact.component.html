@@ -1,0 +1,26 @@
+<section id="contact" class="contact-section">
+  <h2>Contattami</h2>
+
+  <div class="group">
+    <div class="text">
+      Se hai un progetto da proporre, un’idea da discutere o semplicemente vuoi metterti in contatto con me, sarò felice di ascoltarti.
+      <br><br>
+      Collaborazioni, consulenze, richieste tecniche o scambi di opinioni sono sempre benvenuti. Lavoro con passione e attenzione ai dettagli.
+      <br><br>
+      Puoi contattarmi direttamente via email oppure utilizzare il modulo disponibile sul sito. Rispondo in tempi brevi.
+    </div>
+
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+      <label for="name">Nome</label>
+      <input type="text" id="name" formControlName="name">
+
+      <label for="email">Email</label>
+      <input type="email" id="email" formControlName="email">
+
+      <label for="message">Messaggio</label>
+      <textarea id="message" rows="6" formControlName="message"></textarea>
+
+      <button type="submit" [disabled]="contactForm.invalid">Manda Messaggio</button>
+    </form>
+  </div>
+</section>
