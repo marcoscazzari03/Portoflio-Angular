@@ -7,5 +7,5 @@ export const SKILLS = [
     { name: 'Wordpress', image: 'assets/images/wordpress-logo.png', alt: 'Wordpress logo' },
     { name: 'PHP', image: 'assets/images/php-logo.png', alt: 'php logo' },
     { name: 'Google AM', image: 'assets/images/googleam-logo.png', alt: 'googleam logo' },
-    { name: 'Docker', image: 'assets/images/docker.png', alt: 'docker logo' }
+    { name: 'Docker', image: 'assets/images/docker-logo.png', alt: 'docker logo' }
   ];

@@ -34,6 +34,11 @@ src/app/
 │   │   └── projects.component.ts
 |   |   ├── projects.component.html
 |   |   └── projects.component.css
+|   |       |
+|   |       ├── project-card/
+│   │       └── project-card.component.ts
+|   |       ├── project-card.component.html
+|   |       └── project-card.component.css
 |   |
 │   ├── testimony/
 │   │   └── testimony.component.ts
