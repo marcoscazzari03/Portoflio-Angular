@@ -1,0 +1,16 @@
+<section class="services">
+  <div class="header">
+    <h2>{{ title }}</h2>
+    <h3>{{ subtitle }}</h3>
+    <p>{{ description }}</p>
+  </div>
+
+  <div class="service-list">
+    <ul *ngFor="let group of serviceGroups">
+      <li *ngFor="let service of group">
+        <i [class]="service.icon"></i> 
+        <a [routerLink]="service.url">{{ service.text }}</a>
+      </li>
+    </ul>
+  </div>
+</section>
