@@ -2,6 +2,12 @@ src/app/
 │
 ├── app.component.*
 ├── app-routing.module.ts
+│
+├── allservices/                ← pagina servizi     
+│   ├── allservices.component.ts
+│   ├── allservices.component.html
+│   └── allservices.component.css
+│
 ├── core/     
 │   ├── header/                  ← Navbar globale
 │   │   ├── header.component.ts
@@ -10,7 +16,7 @@ src/app/
 │   └── footer/                  ← Footer globale
 │       ├── footer.component.ts
 │       ├── footer.component.html
-│       └── footer.component.scss
+│       └── footer.component.css
 │
 ├── home/                ← pagina principale
 │   ├── home.component.ts
