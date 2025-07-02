@@ -1,10 +1,9 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { ServicesComponent } from './home/services/services.component';
-import { ProjectsComponent } from './home/projects/projects.component';
+import { AllservicesComponent } from './allservices/allservices.component';
 
 export const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'servizi', component: ServicesComponent },
-  { path: 'progetti', component: ProjectsComponent },
+  { path: '', component: HomeComponent, pathMatch: 'full' },
+  { path: 'servizi', component: AllservicesComponent },
+  { path: '**', redirectTo: '' }, // Per qualsiasi percorso non definito, vai alla home
 ];
