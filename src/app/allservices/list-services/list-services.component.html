@@ -1,1 +1,8 @@
-<p>list-services works!</p>
+<section class="services-section">
+  <div class="service-box" *ngFor="let service of services">
+    <div><i [class]="service.icon"></i></div>
+    <h3>{{ service.title }}</h3>
+    <p>{{ service.description }}</p>
+    <a [routerLink]="service.link" class="learn-more">Maggiori informazioni</a>
+  </div>
+</section>
