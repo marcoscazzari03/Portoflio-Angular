@@ -104,6 +104,10 @@
   transform: scale(1.05);
 }
 
+.btn-header i {
+  margin-right: 8px;
+}
+
 .btn-header:hover {
   transform: scale(1.01);
 }

@@ -7,11 +7,11 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule, ReactiveFormsModule],
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.css']  // corretto styleUrls
+  styleUrls: ['./contact.component.css']
 })
 export class ContactComponent {
   contactForm: FormGroup;
-  successMessage = '';  // variabile per messaggio di successo
+  successMessage = '';
 
   constructor(private fb: FormBuilder) {
     this.contactForm = this.fb.group({
@@ -29,7 +29,7 @@ export class ContactComponent {
       this.successMessage = 'Messaggio inviato con successo! Grazie per avermi contattato.';
       this.contactForm.reset();
     } else {
-      this.successMessage = '';  // cancella messaggio successo se invalidi
+      this.successMessage = '';
     }
   }
 
