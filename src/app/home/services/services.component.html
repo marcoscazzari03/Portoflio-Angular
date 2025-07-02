@@ -14,7 +14,7 @@
         <h4 class="label ux" [ngClass]="service.type">{{ service.label }}</h4>
         <h3>{{ service.title }}</h3>
         <p>{{ service.description }}</p>
-        <a href="Servizi/UXUI/uxui.html" class="learn-more">Scopri</a>
+        <a [routerLink]="service.link"  class="learn-more">Scopri</a>
       </div>
     </div>
     <div class="btn-wrapper">

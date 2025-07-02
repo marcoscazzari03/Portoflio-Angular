@@ -9,34 +9,34 @@ export const SERVICE_GROUPS: ServiceLink[][] = [
     {
       icon: 'fa-solid fa-chevron-right',
       text: 'Progettazione web con Wordpress',
-      url: '/wordpress',
+      url: '/servizi/wordpress',
     },
     {
       icon: 'fa-solid fa-chevron-right',
       text: 'Ottimizzazione per i motori di ricerca (SEO)',
-      url: '/seo',
+      url: '/servizi/seo',
     },
     {
       icon: 'fa-solid fa-chevron-right',
       text: 'User experience design',
-      url: '/uxui',
+      url: '/servizi/ux',
     },
   ],
   [
     {
       icon: 'fa-solid fa-chevron-right',
       text: 'Progettazione e sviluppo web',
-      url: '/web',
+      url: '/servizi/sviluppo',
     },
     {
       icon: 'fa-solid fa-chevron-right',
       text: 'Branding e design visivo',
-      url: '/design',
+      url: '/servizi/design',
     },
     {
       icon: 'fa-solid fa-chevron-right',
       text: 'Contenuti e copywriting',
-      url: '/copywriting',
+      url: '/servizi/copywriting',
     },
   ],
 ];

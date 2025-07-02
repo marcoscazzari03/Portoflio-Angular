@@ -4,7 +4,7 @@
       label: 'Ux/Ui',
       title: 'User experience design',
       description: `Uso le migliori tecnologie disponibili, unite a standard rigorosi per offrirti un sito web splendido, apprezzato dai tuoi utenti.`,
-      link: '/servizi/uxui'
+      link: '/servizi/ux'
     },
     {
       type: 'seo',
@@ -18,6 +18,6 @@
       label: 'Web',
       title: 'Web design & development',
       description: `Mi occupo di web design e sviluppo, creando siti moderni, funzionali e ottimizzati per offrire la miglior esperienza utente su ogni dispositivo.`,
-      link: '/servizi/web'
+      link: '/servizi/sviluppo'
     }
   ];
