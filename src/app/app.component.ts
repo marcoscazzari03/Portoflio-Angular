@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-
 import { RouterModule } from '@angular/router';
+import { Router, NavigationStart } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -10,4 +10,12 @@ import { RouterModule } from '@angular/router';
   styleUrl: './app.component.css',
 })
 
-export class AppComponent{}
+export class AppComponent {
+  constructor(private router: Router) {
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationStart) {
+        window.scrollTo(0, 0);
+      }
+    });
+  }
+}
