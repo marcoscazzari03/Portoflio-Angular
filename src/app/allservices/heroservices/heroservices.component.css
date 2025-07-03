@@ -1,7 +1,7 @@
 .services {
-    text-align: center;
-    padding: 80px 20px;
-    font-family: 'Poppins', sans-serif;
+  text-align: center;
+  padding: 80px 20px;
+  font-family: "Poppins", sans-serif;
 }
 
 .services .header h2 {
@@ -15,49 +15,44 @@
 }
 
 .services .header h2::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 15px;
   left: 50%;
   transform: translateX(-50%);
-  width: 0;
+  width: 60%;
   height: 10px;
   background-color: var(--link-color);
   z-index: -1;
   transition: width 1s ease;
 }
 
-/* Classe attivata da JS */
-.services .header h2.animate-line::after {
-  width: 60%;
-}
-
 .services .header h3 {
-    font-size: 24px;
-    font-family: 'Patrick Hand', cursive;
-    margin-bottom: 20px;
+  font-size: 24px;
+  font-family: "Patrick Hand", cursive;
+  margin-bottom: 20px;
 }
 
 .services .header p {
-    font-size: 16px;
-    color: #7d8da1;
-    max-width: 1000px;
-    margin: 0 auto 50px;
-    line-height: 1.6;
+  font-size: 16px;
+  color: #7d8da1;
+  max-width: 1000px;
+  margin: 0 auto 50px;
+  line-height: 1.6;
 }
 
 .service-list {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
 }
 
 .service-list ul {
-    list-style: none;
-    padding: 0;
-    text-align: left;
-    font-weight: 600;
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  font-weight: 600;
 }
 
 .service-list li {
@@ -70,99 +65,25 @@
 }
 
 .service-list li a {
+  color: black;
+  font-size: 1rem;
   transition: transform 0.3s ease;
   display: inline-block;
 }
 
-.service-list ul li a {
-    color: black;
-    font-size: 1rem;
-}
 .service-list li:hover a {
-  transform: translateX(5px); 
+  transform: translateX(5px);
 }
 
 .fa-solid.fa-chevron-right {
-  font-size: 15px; 
+  font-size: 15px;
   margin-right: 10px;
   color: #0d1a2b;
-  text-shadow: 
-  0.5px 0 #0d1a2b,
-  -0.5px 0 #0d1a2b,
-  0 0.5px #0d1a2b,
-  0 -0.5px #0d1a2b; 
+  text-shadow: 0.5px 0 #0d1a2b, -0.5px 0 #0d1a2b, 0 0.5px #0d1a2b,
+    0 -0.5px #0d1a2b;
   transition: color 0.3s ease;
 }
 
 .service-list li:hover .fa-solid.fa-chevron-right {
-  color: var(--link-color); 
-}
-
-.services-section {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Mostra 2 card per riga */
-  gap: 50px;
-  padding: 60px 10%;
-  background: #fff;
-}
-
-.service-box {
-  background: #fff;
-  padding: 30px;
-  border-radius: 10px;
-  position: relative;
-}
-
-.fa-solid.fa-pen,
-.fa-solid.fa-magnifying-glass,
-.fa-solid.fa-ruler-combined,
-.fa-solid.fa-cart-shopping,
-.fa-brands.fa-wordpress,
-.fa-solid.fa-paintbrush,
-.fa-solid.fa-sheet-plastic{
-    font-size: 50px;
-    color: var(--link-color);
-    margin-bottom: 20px;
-}
-
-.service-box h3 {
-  font-size: 30px;
-  font-weight: 800;
-  color: #0d1a2b;
-  margin-bottom: 15px;
-}
-
-.service-box p {
-  color: #555;
-  font-size: 15px;
-  line-height: 1.6;
-  margin-bottom: 25px;
-}
-
-.learn-more {
-  font-weight: 700;
-  color: #0d1a2b;
-  text-decoration: none;
-  position: relative;
-  display: inline-block;
-  font-size: 14px;
-  letter-spacing: 0.5px;
-  border-bottom: 2px solid #00c2ff;
-}
-
-.learn-more::after {
-  content: '';
-  position: absolute;
-  bottom: -3px;
-  left: 0;
-  width: 100%;
-  height: 10px;
-  background: rgba(255, 0, 76, 0.2);
-  border-radius: 50%;
-  z-index: -1;
-  transition: all 0.3s ease;
-}
-
-.learn-more:hover::after {
-  background: rgba(255, 0, 76, 0.4);
+  color: var(--link-color);
 }

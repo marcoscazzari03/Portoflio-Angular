@@ -20,7 +20,7 @@ export const PROJECTS: Project[] = [
     tags: [
       { label: 'WordPress', link: '/servizi/wordpress' },
       { label: 'Brending & Design', link: '/servizi/design' },
-      { label: 'UX', link: '/servizi/uxui' },
+      { label: 'UX', link: '/servizi/ux' },
     ],
     title: 'Le Fonti Awards',
     titleLink: 'https://www.lefontiawards.it',
@@ -30,7 +30,7 @@ export const PROJECTS: Project[] = [
     image: '/assets/images/task-manager.png',
     alt: 'LeFontiAwards immagine',
     tags: [
-      { label: 'Angular', link: '/servizi/angular' },
+      { label: 'Angular', link: '/servizi/sviluppo' },
       { label: 'Web Design', link: '/servizi/design' },
     ],
     title: 'Task Manager',
