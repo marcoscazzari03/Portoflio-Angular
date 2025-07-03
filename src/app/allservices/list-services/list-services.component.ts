@@ -11,7 +11,7 @@ interface Service {
 @Component({
   selector: 'app-list-services',
   standalone: true,
-  imports: [RouterModule, CommonModule],  // importante se è standalone
+  imports: [RouterModule, CommonModule],
   templateUrl: './list-services.component.html',
   styleUrl: './list-services.component.css'
 })

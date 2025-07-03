@@ -1,8 +1,19 @@
+<app-header />
 <section class="hero">
   <div class="container">
     <i [class]="data.icon"></i>
-    <h1>{{ data.title }}</h1>
-    <p>{{ data.description }}</p>
-    <button routerLink="/servizi">Indietro</button> 
+    <h1 class="animate-line">{{ data.title }}</h1>
+    <h2>{{ data.description }}</h2>
+    <a routerLink="/servizi" class="btn-blu">Indietro</a>
+
+    <div class="divider"></div>
+
+    <div *ngFor="let section of data.content">
+      <h2 *ngIf="section.heading" class="custom-heading">
+        {{ section.heading }}
+      </h2>
+      <p [ngClass]="section.cssClass || ''">{{ section.text }}</p>
+    </div>
   </div>
 </section>
+<app-footer />
