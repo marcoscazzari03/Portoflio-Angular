@@ -27,7 +27,6 @@ export class AppComponent {
     this.mouseX = event.clientX;
     this.mouseY = event.clientY;
 
-    // Se il tooltip è visibile, aggiornane la posizione
     if (this.tooltipElement) {
       this.renderer.setStyle(
         this.tooltipElement,
@@ -57,7 +56,6 @@ export class AppComponent {
   }
 
   showFloatingTooltip(message: string): void {
-    // Rimuovi tooltip precedente se esiste
     if (this.tooltipElement) {
       this.renderer.removeChild(document.body, this.tooltipElement);
       clearTimeout(this.tooltipTimeout);
@@ -83,7 +81,6 @@ export class AppComponent {
     this.tooltipElement = tooltip;
     this.renderer.appendChild(document.body, this.tooltipElement);
 
-    // Rimuovi tooltip dopo 2.5 secondi
     this.tooltipTimeout = setTimeout(() => {
       if (this.tooltipElement) {
         this.renderer.removeChild(document.body, this.tooltipElement);

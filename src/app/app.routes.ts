@@ -7,5 +7,5 @@ export const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
   { path: 'servizi', component: AllservicesComponent },
   { path: 'servizi/:serviceId', component: OneServiceComponent },
-  { path: '**', redirectTo: '' }, // Per qualsiasi percorso non definito, vai alla home
+  { path: '**', redirectTo: '' },
 ];
