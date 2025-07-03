@@ -1,0 +1,8 @@
+<div *ngIf="showBanner" class="cookie-banner">
+  <p>Questo sito utilizza i cookie per offrirti la migliore esperienza. Accetti?</p>
+  <div class="actions">
+    <button class="accept" (click)="acceptCookies()">Accetta</button>
+    <button class="reject" (click)="rejectCookies()">Rifiuta</button>
+    <button class="more" routerLink="/privacy" (click)="hideBanner()">Leggi di più</button>
+  </div>
+</div>

@@ -1,12 +1,14 @@
 import { Component, HostListener, Renderer2 } from '@angular/core';
 import { Router, NavigationEnd, RouterModule } from '@angular/router';
 
+import { CookieBannerComponent } from './shared/cookie-banner/cookie-banner.component';
+
 declare let gtag: Function;
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterModule],
+  imports: [RouterModule, CookieBannerComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
