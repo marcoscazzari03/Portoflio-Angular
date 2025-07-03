@@ -12,7 +12,6 @@ import { ListServicesComponent } from "./list-services/list-services.component";
   standalone: true,
   imports: [HeaderComponent, HeroServicesComponent, GoTopComponent, FooterComponent, ListServicesComponent],
   templateUrl: './allservices.component.html',
-  styleUrl: './allservices.component.css'
 })
 
 export class AllservicesComponent implements OnInit {

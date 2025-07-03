@@ -87,3 +87,98 @@
 .service-list li:hover .fa-solid.fa-chevron-right {
   color: var(--link-color);
 }
+
+@media (max-width: 768px) {
+.services {
+  text-align: center;
+  padding: 40px 15px; /* meno padding sui lati e in generale */
+  font-family: "Poppins", sans-serif;
+}
+
+.services .header h2 {
+  font-size: 32px; /* font più piccolo */
+  font-weight: 900;
+  margin-bottom: 8px;
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.services .header h2::after {
+  content: "";
+  position: absolute;
+  bottom: 10px; /* leggermente più vicino */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%; /* linea più corta */
+  height: 6px; /* linea più sottile */
+  background-color: var(--link-color);
+  z-index: -1;
+  transition: width 1s ease;
+}
+
+.services .header h3 {
+  font-size: 18px; /* più piccolo */
+  font-family: "Patrick Hand", cursive;
+  margin-bottom: 15px;
+}
+
+.services .header p {
+  font-size: 14px; /* più piccolo */
+  color: #7d8da1;
+  max-width: 100%;
+  margin: 0 auto 30px;
+  line-height: 1.5;
+  padding: 0 10px; /* padding laterale per non toccare i bordi */
+}
+
+.service-list {
+  display: flex;
+  flex-direction: column; /* disposizione verticale */
+  align-items: center; /* centra gli elementi */
+  gap: 20px; /* meno spazio tra gli elementi */
+}
+
+.service-list ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  font-weight: 600;
+  width: 100%; /* usa tutta la larghezza disponibile */
+  max-width: 350px; /* ma non troppo larga */
+}
+
+.service-list li {
+  margin-bottom: 12px;
+  font-size: 14px; /* font leggermente più piccolo */
+  color: #0d1a2b;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.service-list li a {
+  color: black;
+  font-size: 0.95rem;
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+.service-list li:hover a {
+  transform: translateX(5px);
+}
+
+.fa-solid.fa-chevron-right {
+  font-size: 14px;
+  margin-right: 8px;
+  color: #0d1a2b;
+  text-shadow: 0.5px 0 #0d1a2b, -0.5px 0 #0d1a2b, 0 0.5px #0d1a2b,
+    0 -0.5px #0d1a2b;
+  transition: color 0.3s ease;
+}
+
+.service-list li:hover .fa-solid.fa-chevron-right {
+  color: var(--link-color);
+}
+}
