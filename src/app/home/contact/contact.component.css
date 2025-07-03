@@ -72,3 +72,36 @@ textarea.ng-invalid.ng-touched {
   margin-bottom: 1rem;
   font-weight: bold;
 }
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 0 20px;
+    margin-bottom: 50px;
+  }
+
+  .contact-section h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .contact-section .group {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .contact-section .group .text,
+  .contact-section .group form {
+    flex: none;
+    margin-top: 0;
+    width: 100%;
+  }
+
+  .contact-section .group form button {
+    height: 45px;
+    font-size: 14px;
+  }
+
+  input, textarea {
+    font-size: 0.95rem;
+    padding: 8px;
+  }
+}

@@ -52,3 +52,29 @@
   margin-bottom: 20px;
   text-align: center;
 }
+@media (max-width: 600px) {
+  .project-card {
+    max-width: 100%; /* occuperà tutta la larghezza disponibile */
+    padding: 15px;
+  }
+
+  .project-card h2 {
+    font-size: 22px;
+    margin: 8px 0;
+    letter-spacing: normal !important;
+  }
+
+  .project-card h3 {
+    font-size: 0.85rem;
+  }
+
+  .project-card p {
+    font-size: 0.85rem;
+    margin-bottom: 15px;
+  }
+
+  .project-card img {
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+}

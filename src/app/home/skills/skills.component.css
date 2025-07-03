@@ -54,3 +54,17 @@
 .skills-section .cells .cell span {
   font-size: 18px;
 }
+
+@media (max-width: 600px) {
+  .skills-section .cells {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .skills-section .cells .cell:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    max-width: 150px;
+  }
+}

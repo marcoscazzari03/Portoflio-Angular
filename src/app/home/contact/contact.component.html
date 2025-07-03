@@ -10,7 +10,6 @@
       Puoi contattarmi direttamente via email oppure utilizzare il modulo disponibile sul sito. Rispondo in tempi brevi.
     </div>
 
-    <!-- Messaggio di successo -->
     <div *ngIf="successMessage" class="success-message">{{ successMessage }}</div>
 
     <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
