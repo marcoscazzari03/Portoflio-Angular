@@ -43,10 +43,6 @@ export class CookieBannerComponent implements OnInit {
     });
   }
 
-  hideBanner() {
-    this.showBanner = false;
-  }
-
   loadAnalytics() {
     (window as any).dataLayer = (window as any).dataLayer || [];
 
