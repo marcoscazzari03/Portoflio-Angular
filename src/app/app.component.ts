@@ -1,6 +1,8 @@
 import { Component, HostListener, Renderer2 } from '@angular/core';
 import { Router, NavigationEnd, RouterModule } from '@angular/router';
 
+declare let gtag: Function;
+
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -15,9 +17,11 @@ export class AppComponent {
   tooltipTimeout: any = null;
 
   constructor(private router: Router, private renderer: Renderer2) {
-    this.router.events.subscribe((event) => {
+    this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
-        window.scrollTo(0, 0);
+        gtag('config', 'G-K77R71FWFY', {
+          page_path: event.urlAfterRedirects,
+        });
       }
     });
   }

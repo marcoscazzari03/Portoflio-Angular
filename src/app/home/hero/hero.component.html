@@ -1,7 +1,9 @@
 <section class="hero-section">
   <div class="text">
     <h2>SEO, UX/UI, sviluppo web e altro ancora</h2>
-    <h3>Il <span class="typing-text">{{ currentText }}</span></h3>
+    <h3>
+      Il <span class="typing-text">{{ currentText }}</span>
+    </h3>
     <h1>porta risultati concreti</h1>
     <div class="typing-container"></div>
     <p>
@@ -13,22 +15,26 @@
       concreti.
     </p>
 
-<div class="links">
-  <a
-    *ngFor="let link of links"
-    [href]="link.href"
-    [attr.download]="link.download ? '' : null"
-    [class.cv]="link.download"
-    class="btn-header"
-  >
-    <i [class]="link.icon"></i>
-    <span>{{ link.label }}</span>
-  </a>
-</div>
+    <div class="links">
+      <a
+        *ngFor="let link of links"
+        [href]="link.href"
+        [attr.download]="link.download ? '' : null"
+        [class.cv]="link.download"
+        class="btn-header"
+        gaEvent
+        [gaEventCategory]="'Header Links'"
+        [gaEventAction]="'click'"
+        [gaEventLabel]="link.label"
+      >
+        <i [class]="link.icon"></i>
+        <span>{{ link.label }}</span>
+      </a>
+    </div>
   </div>
 
   <div class="headshot">
-    <img src="assets/images/Marco.jpg" alt="Marco Scazzari" />
+    <img src="assets/images/Marco.webp" alt="Marco Scazzari" />
   </div>
   <app-go-top></app-go-top>
 </section>

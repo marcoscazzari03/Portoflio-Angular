@@ -2,7 +2,7 @@ export const SERVICES_DATA = {
   wordpress: {
     title: 'Wordpress Web Design',
     description:
-      'Realizzo siti WordPress personalizzati, ottimizzati per i motori di ricerca...',
+      "Realizzo siti WordPress personalizzati, ottimizzati per i motori di ricerca e in grado di offrire un'ottima esperienza utente.",
     icon: 'fa-brands fa-wordpress',
     content: [
       {

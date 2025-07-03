@@ -37,14 +37,21 @@
       function gtag() {
         dataLayer.push(arguments);
       }
-      gtag("js", new Date());
-      gtag('config', 'G-K77R71FWFY', { debug_mode: true });
 
-      gtag("config", "G-K77R71FWFY");
+      gtag("js", new Date());
+
+      const isDev = window.location.hostname === "localhost";
+
+      gtag("config", "G-K77R71FWFY", {
+        debug_mode: isDev,
+        page_path: window.location.pathname,
+        send_page_view: true,
+        anonymize_ip: true,
+        allow_ad_personalization_signals: false,
+      });
     </script>
   </head>
   <body>
     <app-root></app-root>
-    <!-- Angular mount point -->
   </body>
 </html>

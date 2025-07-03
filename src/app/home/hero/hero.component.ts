@@ -4,18 +4,19 @@ import { Type } from '@angular/core';
 
 import { GoTopComponent } from '../../shared/go-top/go-top.component';
 import { HERO_LINKS } from './hero-links';
+import { GaEventDirective } from '../../directives/ga-event.directive';
 
 @Component({
   selector: 'app-hero',
   standalone: true,
-  imports: [GoTopComponent, NgFor],
+  imports: [GoTopComponent, NgFor, GaEventDirective],
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.css',
 })
 export class HeroComponent implements OnInit {
   links = HERO_LINKS;
 
-  texts: string[] = ['web developer', 'design', 'codice', 'SEO', 'frontend'];
+  texts: string[] = ['web developer', 'web designer', 'seo specialist', 'copywriter', 'frontend developer'];
   currentText = '';
   currentWordIndex = 0;
   currentCharIndex = 0;
