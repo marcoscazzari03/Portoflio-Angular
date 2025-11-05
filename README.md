@@ -1,27 +1,56 @@
-# Essentials
+# 🌐 Portfolio Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.2.
+Applicazione **Portfolio personale** realizzata con **Angular 17**.  
+Presenta i miei **progetti, competenze, servizi e contatti** in un design moderno, responsive e completamente dinamico.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 🚀 Tecnologie principali
 
-## Code scaffolding
+- ⚙️ **Angular 17**
+- 🧠 **TypeScript**
+- 🎨 **HTML / SCSS**
+- 🧩 **Angular Material**
+- 🔁 **Componenti modulari e riutilizzabili**
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
 
-## Build
+## 🧱 Struttura del progetto
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Consulta il file [📁 `project-structure.md`](./project-structure.md) per la gerarchia completa della cartella `src/app/`.
 
-## Running unit tests
+---
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 💼 Sezioni principali
 
-## Running end-to-end tests
+| Sezione | Descrizione |
+|----------|-------------|
+| 🏠 **Home** | Pagina principale con Hero, introduzione e link rapidi |
+| 💼 **Projects** | Elenco dei progetti con card dedicate e dati importati da `project.data.ts` |
+| 🛠️ **Skills** | Competenze tecniche e tecnologie utilizzate |
+| 💬 **Testimony** | Testimonianze o feedback ricevuti |
+| 🧩 **Services** | Servizi offerti, caricati da `services.data.ts` |
+| 📞 **Contact** | Sezione contatti o form per richieste |
+| 🔐 **Privacy** | Pagina dedicata alla Privacy Policy |
+| 🍪 **Cookie Banner** | Gestione informativa cookie |
+| 🔝 **Go Top** | Pulsante per tornare in cima alla pagina |
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+---
 
-## Further help
+## 🧩 Componenti globali e condivisi
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- **Header / Footer** → layout globale del sito  
+- **Project-card** → visualizzazione singolo progetto  
+- **Cookie-banner** → informativa cookie  
+- **Go-top** → pulsante “torna su”  
+- **Direttive personalizzate** → gestione eventi (es. `ga-event.directive.ts`)
+
+---
+
+## ⚙️ Avvio del progetto
+
+### 🔹 Installazione delle dipendenze
+Assicurati di aver installato [Node.js](https://nodejs.org/) e [Angular CLI](https://angular.io/cli) sul tuo sistema.
+
+```bash
+npm install
