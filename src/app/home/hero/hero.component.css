@@ -121,14 +121,24 @@
 .hero-section .headshot img {
   display: block;
   max-width: 550px;
-  width: 550px;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
+  width: 500px;
+  height: auto;
+  object-fit: contain;
   border-radius: 50%;
-  margin: 0 auto;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-inline: auto;
+
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+
+  background-color: #f8f8f8;
 }
+.hero-section .headshot img:hover {
+  transform: scale(1.03);
+  box-shadow:
+    0 14px 30px rgba(0, 0, 0, 0.2);
+}
+
 
 @media (max-width: 740px) {
 
