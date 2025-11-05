@@ -1,3 +1,6 @@
+## 📁 Struttura del progetto (`src/app/`)
+
+```text
 src/app/
 │
 ├── app-routing.module.ts
@@ -23,7 +26,7 @@ src/app/
 │
 ├── directives/                         ← Direttive personalizzate
 │   └── ga-event.directives.ts
-│   
+│
 ├── home/                               ← Pagina principale
 │   ├── home.component.ts
 │   ├── home.component.html
