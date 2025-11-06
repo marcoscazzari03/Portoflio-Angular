@@ -1,11 +1,14 @@
 <div class="project-card">
   <img [src]="project.image" [alt]="project.alt" />
-  <h3>
-    <ng-container *ngFor="let tag of project.tags; let i = index">
-      <a [routerLink]="tag.link">{{ tag.label }}</a>
-      <span *ngIf="i < project.tags.length - 1" class="and-symbol">|</span>
+
+  <div class="tags">
+    <ng-container *ngFor="let tag of project.tags">
+      <a [routerLink]="tag.link" class="tag">{{ tag.label }}</a>
     </ng-container>
-  </h3>
-  <a [routerLink]="project.titleLink"><h2>{{ project.title }}</h2></a>
+  </div>
+
+  <a [routerLink]="project.titleLink"
+    ><h2>{{ project.title }}</h2></a
+  >
   <p>{{ project.description }}</p>
 </div>
