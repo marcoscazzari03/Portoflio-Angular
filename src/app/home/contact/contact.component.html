@@ -1,31 +1,67 @@
 <section id="contact" class="contact-section">
-  <h2>Contattami</h2>
-
   <div class="group">
     <div class="text">
-      Se hai un progetto da proporre, un’idea da discutere o semplicemente vuoi metterti in contatto con me, sarò felice di ascoltarti.
-      <br><br>
-      Collaborazioni, consulenze, richieste tecniche o scambi di opinioni sono sempre benvenuti. Lavoro con passione e attenzione ai dettagli.
-      <br><br>
-      Puoi contattarmi direttamente via email oppure utilizzare il modulo disponibile sul sito. Rispondo in tempi brevi.
+      <h2>Contattami</h2>
+      Se hai un progetto da proporre, un’idea da discutere o semplicemente vuoi
+      metterti in contatto con me, sarò felice di ascoltarti.
+      <br /><br />
+      Collaborazioni, consulenze, richieste tecniche o scambi di opinioni sono
+      sempre benvenuti. Lavoro con passione e attenzione ai dettagli.
+      <br /><br />
+      Puoi contattarmi direttamente via email oppure utilizzare il modulo
+      disponibile sul sito. Rispondo in tempi brevi.
     </div>
 
-    <div *ngIf="successMessage" class="success-message">{{ successMessage }}</div>
-
-    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-      <input type="text" id="name" formControlName="name" placeholder="Nome" />
-      <div *ngIf="showError('name')" class="error">Il nome è obbligatorio.</div>
-
-      <input type="email" id="email" formControlName="email" placeholder="Email" />
-      <div *ngIf="showError('email')" class="error">
-        <span *ngIf="contactForm.get('email')?.errors?.['required']">L'email è obbligatoria.</span>
-        <span *ngIf="contactForm.get('email')?.errors?.['email']">Inserisci un'email valida.</span>
+    <div class="form-container">
+      <div
+        *ngIf="successMessage; else contactFormBlock"
+        class="success-message fade-in"
+      >
+        {{ successMessage }}
       </div>
 
-      <textarea id="message" rows="6" formControlName="message" placeholder="Messaggio"></textarea>
-      <div *ngIf="showError('message')" class="error">Il messaggio è obbligatorio.</div>
+      <ng-template #contactFormBlock>
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+          <input
+            type="text"
+            id="name"
+            formControlName="name"
+            placeholder="Nome"
+          />
+          <div *ngIf="showError('name')" class="error">
+            Il nome è obbligatorio.
+          </div>
 
-      <button type="submit" [disabled]="contactForm.invalid">Manda Messaggio</button>
-    </form>
+          <input
+            type="email"
+            id="email"
+            formControlName="email"
+            placeholder="Email"
+          />
+          <div *ngIf="showError('email')" class="error">
+            <span *ngIf="contactForm.get('email')?.errors?.['required']"
+              >L'email è obbligatoria.</span
+            >
+            <span *ngIf="contactForm.get('email')?.errors?.['email']"
+              >Inserisci un'email valida.</span
+            >
+          </div>
+
+          <textarea
+            id="message"
+            rows="6"
+            formControlName="message"
+            placeholder="Messaggio"
+          ></textarea>
+          <div *ngIf="showError('message')" class="error">
+            Il messaggio è obbligatorio.
+          </div>
+
+          <button type="submit" [disabled]="contactForm.invalid">
+            Manda Messaggio
+          </button>
+        </form>
+      </ng-template>
+    </div>
   </div>
 </section>

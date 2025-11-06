@@ -5,27 +5,40 @@
 
 .contact-section h2 {
   font-size: 35px;
+  margin-bottom: 35px;
 }
 
 .contact-section .group {
   display: flex;
   gap: 50px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .contact-section .group .text {
   flex: 3;
-  margin-top: 20px;
+  margin-top: 0;
+  align-self: center;
 }
 
-.contact-section .group form {
+.form-container {
   flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  position: relative;
+}
+
+.form-container form {
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
 
-.contact-section .group form input,
-.contact-section .group form textarea {
-  font-family: 'Poppins', sans-serif;
+.form-container form input,
+.form-container form textarea {
+  font-family: "Poppins", sans-serif;
   border: 2px solid var(--link-color);
   background-color: transparent;
   padding: 10px;
@@ -34,22 +47,52 @@
   resize: none;
 }
 
-.contact-section .group form button {
+.form-container form button {
   font-size: 16px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #fff;
   background-color: var(--link-color);
   border: none;
   height: 50px;
   cursor: pointer;
-  transition: .1s;
+  transition: 0.1s;
 }
 
-.contact-section .group form button:hover {
-  filter: brightness(.9);
+.form-container form button:hover {
+  filter: brightness(0.9);
 }
 
-input, textarea {
+.success-message {
+  color: green;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.2rem;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.error {
+  color: red;
+  font-size: 0.85rem;
+  margin-bottom: 12px;
+}
+
+input,
+textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 8px;
@@ -61,17 +104,6 @@ textarea.ng-invalid.ng-touched {
   border: 1px solid red;
 }
 
-.error {
-  color: red;
-  font-size: 0.85rem;
-  margin-bottom: 12px;
-}
-
-.success-message {
-  color: green;
-  margin-bottom: 1rem;
-  font-weight: bold;
-}
 @media (max-width: 768px) {
   .contact-section {
     padding: 0 20px;
@@ -86,21 +118,27 @@ textarea.ng-invalid.ng-touched {
   .contact-section .group {
     flex-direction: column;
     gap: 20px;
+    align-items: stretch;
   }
 
   .contact-section .group .text,
-  .contact-section .group form {
+  .form-container {
     flex: none;
     margin-top: 0;
     width: 100%;
   }
 
-  .contact-section .group form button {
+  .form-container {
+    min-height: auto;
+  }
+
+  .form-container form button {
     height: 45px;
     font-size: 14px;
   }
 
-  input, textarea {
+  input,
+  textarea {
     font-size: 0.95rem;
     padding: 8px;
   }
