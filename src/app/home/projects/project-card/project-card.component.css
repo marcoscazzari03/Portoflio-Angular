@@ -63,18 +63,18 @@
 
 .project-card .tag {
   background-color: #fff;
-  color: #4a76ee;
+  color: var(--link-color);
   font-weight: 600;
   font-size: 0.85rem;
   padding: 0.3rem 0.8rem;
   border-radius: 9999px;
   text-decoration: none;
-  border: 1px solid #4a76ee;
+  border: 1px solid var(--link-color);
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .project-card .tag:hover {
-  background-color: #4a76ee;
+  background-color: var(--link-color);
   color: #fff;
 }
 
