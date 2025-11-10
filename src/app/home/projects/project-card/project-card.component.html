@@ -3,12 +3,13 @@
 
   <div class="tags">
     <ng-container *ngFor="let tag of project.tags">
-      <a [routerLink]="tag.link" class="tag">{{ tag.label }}</a>
+      <a [routerLink]="tag.link" class="tag">{{ tag.label | translate }}</a>
     </ng-container>
   </div>
 
-  <a [routerLink]="project.titleLink"
-    ><h2>{{ project.title }}</h2></a
-  >
-  <p>{{ project.description }}</p>
+  <a [routerLink]="project.titleLink">
+    <h2>{{ project.title | translate }}</h2>
+  </a>
+
+  <p>{{ project.description | translate }}</p>
 </div>

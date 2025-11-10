@@ -1,9 +1,9 @@
 <section id="progetti" class="projects-section">
-  <h1>Progetti Principali</h1>
+  <h1>{{ 'projects.header.title' | translate }}</h1>
   <div class="projects-container">
     <app-project-card
       *ngFor="let project of projects"
-      [project]="project"
-    ></app-project-card>
+      [project]="project">
+    </app-project-card>
   </div>
 </section>

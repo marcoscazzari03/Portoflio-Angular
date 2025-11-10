@@ -43,5 +43,32 @@
       "title": "Competenze",
       "description": "Qui sotto troverai una panoramica delle mie competenze tecniche e professionali, sviluppate nel corso degli anni grazie a progetti concreti e tanta passione. Queste skill mi permettono di creare soluzioni efficaci e creative nel mondo del web."
     }
+},
+  "projects": {
+    "header": {
+      "title": "Progetti Principali"
+    },
+    "tags": {
+      "wordpress": "WordPress",
+      "seo": "SEO",
+      "copywriting": "Copywriting",
+      "design": "Branding & Design",
+      "ux": "UX",
+      "angular": "Angular"
+    },
+    "items": {
+      "trend": {
+        "title": "Trend-Online",
+        "description": "Gestisco Trend-Online, dove unisco creatività e competenze tecniche in HTML, CSS e TypeScript. Mi occupo anche di pubblicità e ho seguito la migrazione da Angular a WordPress."
+      },
+      "lefonti": {
+        "title": "Le Fonti Awards",
+        "description": "Gestisco e aggiorno il sito ufficiale lefontiawards.it, migliorando contenuti ed esperienza utente per un evento globale di rilievo nei settori business, legal e finance."
+      },
+      "task": {
+        "title": "Task Manager",
+        "description": "Durante il corso Udemy ho sviluppato un progetto Angular completo, applicando concetti chiave come componenti, routing e servizi, migliorando le mie competenze pratiche."
+      }
+    }
 }
 }

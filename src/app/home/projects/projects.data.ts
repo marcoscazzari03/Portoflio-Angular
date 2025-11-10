@@ -5,36 +5,35 @@ export const PROJECTS: Project[] = [
     image: '/assets/images/trend-online.png',
     alt: 'Trend-Online immagine',
     tags: [
-      { label: 'WordPress', link: '/servizi/wordpress' },
-      { label: 'SEO', link: '/servizi/seo' },
-      { label: 'Copywriting', link: '/servizi/copywriting' },
+      { label: 'projects.tags.wordpress', link: '/servizi/wordpress' },
+      { label: 'projects.tags.seo', link: '/servizi/seo' },
+      { label: 'projects.tags.copywriting', link: '/servizi/copywriting' }
     ],
-    title: 'Trend-Online',
+    title: 'projects.items.trend.title',
     titleLink: '/progetti/tol',
-    description: `Gestisco Trend-Online, dove unisco creatività e competenze tecniche in HTML, CSS e
-    TypeScript. Mi occupo anche di pubblicità e ho seguito la migrazione da Angular a WordPress.`,
+    description: 'projects.items.trend.description'
   },
   {
     image: '/assets/images/lefonti-awards.png',
     alt: 'LeFontiAwards immagine',
     tags: [
-      { label: 'WordPress', link: '/servizi/wordpress' },
-      { label: 'Brending & Design', link: '/servizi/design' },
-      { label: 'UX', link: '/servizi/ux' },
+      { label: 'projects.tags.wordpress', link: '/servizi/wordpress' },
+      { label: 'projects.tags.design', link: '/servizi/design' },
+      { label: 'projects.tags.ux', link: '/servizi/ux' }
     ],
-    title: 'Le Fonti Awards',
+    title: 'projects.items.lefonti.title',
     titleLink: 'https://www.lefontiawards.it',
-    description: `Gestisco e aggiorno il sito ufficiale lefontiawards.it, migliorando contenuti ed esperienza utente per un evento globale di rilievo nei settori business, legal e finance.`,
+    description: 'projects.items.lefonti.description'
   },
   {
     image: '/assets/images/task-manager.png',
-    alt: 'LeFontiAwards immagine',
+    alt: 'Task Manager immagine',
     tags: [
-      { label: 'Angular', link: '/servizi/sviluppo' },
-      { label: 'Web Design', link: '/servizi/design' },
+      { label: 'projects.tags.angular', link: '/servizi/sviluppo' },
+      { label: 'projects.tags.design', link: '/servizi/design' }
     ],
-    title: 'Task Manager',
+    title: 'projects.items.task.title',
     titleLink: 'https://www.lefontiawards.it',
-    description: `Durante il corso Udemy ho sviluppato un progetto Angular completo, applicando concetti chiave come componenti, routing e servizi, migliorando le mie competenze pratiche.`,
-  },
+    description: 'projects.items.task.description'
+  }
 ];

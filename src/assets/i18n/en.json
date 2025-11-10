@@ -43,5 +43,32 @@
       "title": "Skills",
       "description": "Below you will find an overview of my technical and professional skills, developed over the years through real projects and passion. These skills allow me to create effective and creative solutions in the web world."
     }
+},
+  "projects": {
+    "header": {
+      "title": "Main Projects"
+    },
+    "tags": {
+      "wordpress": "WordPress",
+      "seo": "SEO",
+      "copywriting": "Copywriting",
+      "design": "Branding & Design",
+      "ux": "UX",
+      "angular": "Angular"
+    },
+    "items": {
+      "trend": {
+        "title": "Trend-Online",
+        "description": "I manage Trend-Online, combining creativity and technical skills in HTML, CSS, and TypeScript. I also handle advertising and oversaw the migration from Angular to WordPress."
+      },
+      "lefonti": {
+        "title": "Le Fonti Awards",
+        "description": "I manage and update the official website lefontiawards.it, enhancing content and user experience for a global event in the business, legal, and finance sectors."
+      },
+      "task": {
+        "title": "Task Manager",
+        "description": "During the Udemy course I developed a complete Angular project, applying key concepts such as components, routing, and services, improving my practical skills."
+      }
+    }
 }
 }
