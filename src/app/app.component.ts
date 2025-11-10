@@ -2,13 +2,14 @@ import { Component, HostListener, Renderer2 } from '@angular/core';
 import { Router, NavigationEnd, RouterModule } from '@angular/router';
 
 import { CookieBannerComponent } from './shared/cookie-banner/cookie-banner.component';
+import { ScrollProgressComponent } from "./shared/scroll-progress/scroll-progress.component";
 
 declare let gtag: Function;
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterModule, CookieBannerComponent],
+  imports: [RouterModule, CookieBannerComponent, ScrollProgressComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
