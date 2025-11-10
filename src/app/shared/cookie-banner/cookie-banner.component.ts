@@ -18,6 +18,9 @@ export class CookieBannerComponent implements OnInit {
 
     if (consent === 'true') {
       this.loadAnalytics();
+      this.updateConsent('granted');
+    } else {
+      this.updateConsent('denied');
     }
   }
 
@@ -25,11 +28,7 @@ export class CookieBannerComponent implements OnInit {
     this.showBanner = false;
     localStorage.setItem('cookie_consent', 'true');
 
-    //comunico l'approvazione a Google Analytics
-    this.gtag('consent', 'update', {
-      analytics_storage: 'granted',
-    });
-
+    this.updateConsent('granted');
     this.loadAnalytics();
   }
 
@@ -37,38 +36,48 @@ export class CookieBannerComponent implements OnInit {
     this.showBanner = false;
     localStorage.setItem('cookie_consent', 'false');
 
-    //comunico il rifiuto a Google Analytics
-    this.gtag('consent', 'update', {
-      analytics_storage: 'denied',
-    });
+    this.updateConsent('denied');
   }
 
-  loadAnalytics() {
+  private updateConsent(status: 'granted' | 'denied') {
     (window as any).dataLayer = (window as any).dataLayer || [];
+    (window as any).gtag =
+      (window as any).gtag ||
+      function (...args: any[]) {
+        (window as any).dataLayer.push(args);
+      };
 
-    const gtag = (...args: any[]) => {
-      (window as any).dataLayer.push(args);
-    };
+    (window as any).gtag('consent', 'update', {
+      analytics_storage: status,
+    });
 
-    const existingScript = document.querySelector(
-      'script[src*="googletagmanager.com/gtag/js"]'
-    );
-    if (!existingScript) {
-      const script = document.createElement('script');
-      script.src = 'https://www.googletagmanager.com/gtag/js?id=G-K77R71FWFY';
-      script.async = true;
-      document.head.appendChild(script);
+    console.log('GA consent updated →', status);
+  }
+
+  private loadAnalytics() {
+    if (document.querySelector('script[src*="googletagmanager.com/gtag/js"]')) {
+      console.log('Google Analytics già caricato');
+      return;
     }
 
-    gtag('js', new Date());
-    gtag('config', 'G-K77R71FWFY', {
+    const script = document.createElement('script');
+    script.async = true;
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-K77R71FWFY';
+    document.head.appendChild(script);
+
+    (window as any).dataLayer = (window as any).dataLayer || [];
+    (window as any).gtag =
+      (window as any).gtag ||
+      function (...args: any[]) {
+        (window as any).dataLayer.push(args);
+      };
+
+    (window as any).gtag('js', new Date());
+    (window as any).gtag('config', 'G-K77R71FWFY', {
       anonymize_ip: true,
       allow_ad_personalization_signals: false,
     });
-  }
 
-  private gtag(command: string, target: string, config?: any): void {
-    (window as any).dataLayer = (window as any).dataLayer || [];
-    (window as any).dataLayer.push(arguments);
+    console.log('Google Analytics caricato correttamente');
   }
 }

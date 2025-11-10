@@ -28,24 +28,39 @@
       referrerpolicy="no-referrer"
     />
 
+    <!-- Google tag (gtag.js) -->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-K77R71FWFY"
     ></script>
-
     <script>
+      // === CONFIGURAZIONE INIZIALE GA4 ===
       window.dataLayer = window.dataLayer || [];
       function gtag() {
         dataLayer.push(arguments);
       }
 
-      // Prevenzione default: blocca GA finché non acconsente
-      gtag("consent", "default", {
-        analytics_storage: "denied",
+      // Imposta lo stato predefinito del consenso: negato
+      gtag('consent', 'default', {
+        analytics_storage: 'denied',
       });
+
+      // Inizializza Google Analytics
+      gtag('js', new Date());
+      gtag('config', 'G-K77R71FWFY', { anonymize_ip: true });
     </script>
   </head>
+
   <body>
     <app-root></app-root>
+
+    <!-- === Sblocco consenso dal banner cookie === -->
+    <script>
+      /**
+       * Chiamata di esempio da eseguire quando l'utente accetta i cookie analitici.
+       * Puoi farlo nel tuo CookieBannerComponent con:
+       *   window.gtag('consent', 'update', { analytics_storage: 'granted' });
+       */
+    </script>
   </body>
 </html>
