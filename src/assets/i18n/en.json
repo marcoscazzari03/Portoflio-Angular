@@ -8,6 +8,34 @@
   },
   "links": {
     "cv": "Download CV",
-    "contact": "Contact Me"
+    "services": "Services",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "services": {
+    "header": {
+      "title": "My Services",
+      "description": "I am a web designer specialized in creating and optimizing modern websites, carefully designed to offer maximum functionality. I provide a full range of services including:"
+    },
+    "labels": {
+      "ux": "Ux/Ui",
+      "seo": "Seo",
+      "web": "Web"
+    },
+    "titles": {
+      "ux": "User Experience Design",
+      "seo": "Search Engine Optimization",
+      "web": "Web Design & Development"
+    },
+    "descriptions": {
+      "ux": "I use the best technologies available combined with rigorous standards to deliver a beautiful website appreciated by your users.",
+      "seo": "I handle digital marketing and SEO to help companies build an effective online presence, achieve tangible results, and truly grow.",
+      "web": "I focus on web design and development, creating modern, functional websites optimized to provide the best user experience on every device."
+    },
+    "buttons": {
+      "learn_more": "Learn more",
+      "view_all": "View all services >"
+    }
   }
 }

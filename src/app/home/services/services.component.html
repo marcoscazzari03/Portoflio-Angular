@@ -2,23 +2,19 @@
   <div class="container">
     <div class="header">
       <div class="stars">★★★★★</div>
-      <h2>I Miei Servizi</h2>
-      <p>
-        Sono un web designer specializzato nella creazione e ottimizzazione di
-        siti web moderni, curati nei dettagli e pensati per offrire la massima
-        funzionalità. Offro una gamma completa di servizi, tra cui:
-      </p>
+      <h2>{{ 'services.header.title' | translate }}</h2>
+      <p>{{ 'services.header.description' | translate }}</p>
     </div>
     <div class="service-grid">
       <div class="service-box" *ngFor="let service of services">
-        <h4 class="label ux" [ngClass]="service.type">{{ service.label }}</h4>
-        <h3>{{ service.title }}</h3>
-        <p>{{ service.description }}</p>
-        <a [routerLink]="service.link"  class="learn-more">Scopri</a>
+        <h4 class="label ux" [ngClass]="service.type">{{ service.label | translate }}</h4>
+        <h3>{{ service.title | translate }}</h3>
+        <p>{{ service.description | translate }}</p>
+        <a [routerLink]="service.link" class="learn-more">{{ 'services.buttons.learn_more' | translate }}</a>
       </div>
     </div>
     <div class="btn-wrapper">
-      <a [routerLink]="['/servizi']" class="view-all">Vedi tutti i servizi ></a>
+      <a [routerLink]="['/servizi']" class="view-all">{{ 'services.buttons.view_all' | translate }}</a>
     </div>
   </div>
 </section>

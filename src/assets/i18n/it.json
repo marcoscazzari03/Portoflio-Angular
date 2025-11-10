@@ -12,5 +12,30 @@
     "skills": "Competenze",
     "projects": "Progetti",
     "contact": "Contatto"
+  },
+  "services": {
+    "header": {
+      "title": "I Miei Servizi",
+      "description": "Sono un web designer specializzato nella creazione e ottimizzazione di siti web moderni, curati nei dettagli e pensati per offrire la massima funzionalità. Offro una gamma completa di servizi, tra cui:"
+    },
+    "labels": {
+      "ux": "Ux/Ui",
+      "seo": "Seo",
+      "web": "Web"
+    },
+    "titles": {
+      "ux": "User experience design",
+      "seo": "Search engine optimization",
+      "web": "Web design & development"
+    },
+    "descriptions": {
+      "ux": "Uso le migliori tecnologie disponibili, unite a standard rigorosi per offrirti un sito web splendido, apprezzato dai tuoi utenti.",
+      "seo": "Mi occupo di marketing digitale e SEO per aiutare le aziende a costruire una presenza online efficace, raggiungere risultati tangibili e crescere realmente.",
+      "web": "Mi occupo di web design e sviluppo, creando siti moderni, funzionali e ottimizzati per offrire la miglior esperienza utente su ogni dispositivo."
+    },
+    "buttons": {
+      "learn_more": "Scopri",
+      "view_all": "Vedi tutti i servizi >"
+    }
   }
 }
