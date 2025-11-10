@@ -8,6 +8,9 @@
   },
   "links": {
     "cv": "Scarica CV",
-    "contact": "Contattami"
+    "services": "Servizi",
+    "skills": "Competenze",
+    "projects": "Progetti",
+    "contact": "Contatto"
   }
 }
