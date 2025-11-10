@@ -5,11 +5,12 @@ import { Type } from '@angular/core';
 import { GoTopComponent } from '../../shared/go-top/go-top.component';
 import { HERO_LINKS } from './hero-links';
 import { GaEventDirective } from '../../directives/ga-event.directive';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-hero',
   standalone: true,
-  imports: [GoTopComponent, NgFor, GaEventDirective],
+  imports: [GoTopComponent, NgFor, GaEventDirective, TranslateModule],
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.css',
 })

@@ -19,6 +19,11 @@
         <i class="fa-solid fa-envelope" aria-hidden="true"></i>
         <span>Email</span>
       </a>
+
+      <!-- ✅ Pulsante cambio lingua -->
+      <button (click)="switchLanguage()" class="lang-btn">
+        🌐 {{ currentLang === 'it' ? 'English' : 'Italiano' }}
+      </button>
     </div>
   </nav>
 </header>

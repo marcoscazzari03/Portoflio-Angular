@@ -1,18 +1,15 @@
 <section class="hero-section">
   <div class="text">
-    <h2>Sviluppo Web, SEO Specialist, Sistemista</h2>
+    <h2>{{ 'hero.subtitle' | translate }}</h2>
     <h3>
-      Il <span class="typing-text">{{ currentText }}</span>
+      {{ 'hero.prefix' | translate }}
+      <span class="typing-text">{{ currentText }}</span>
     </h3>
-    <h1>porta risultati concreti</h1>
-    <div class="typing-container"></div>
+    <h1>{{ 'hero.title' | translate }}</h1>
+
     <p>
-      <strong>Junior Web Developer</strong> appassionato di tecnologia e
-      <em>sviluppo web</em> Affronto ogni progetto con entusiasmo, curiosità e
-      determinazione, sempre alla ricerca di nuove sfide per crescere sia a
-      livello tecnico che umano. Collaboro con spirito di squadra e metto al
-      servizio del team le mie competenze per raggiungere insieme obiettivi
-      concreti.
+      <strong>{{ 'hero.role' | translate }}</strong>
+      {{ 'hero.description' | translate }}
     </p>
 
     <div class="links">
@@ -28,7 +25,7 @@
         [gaEventLabel]="link.label"
       >
         <i [class]="link.icon"></i>
-        <span>{{ link.label }}</span>
+        <span>{{ link.label | translate }}</span> <!-- ✅ anche i testi dei link -->
       </a>
     </div>
   </div>

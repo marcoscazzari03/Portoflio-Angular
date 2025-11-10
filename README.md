@@ -1,13 +1,13 @@
 # 🌐 Portfolio Angular
 
-Applicazione **Portfolio personale** realizzata con **Angular 17**.  
+Applicazione **Portfolio personale** realizzata con **Angular 20**.  
 Presenta i miei **progetti, competenze, servizi e contatti** in un design moderno, responsive e completamente dinamico.
 
 ---
 
 ## 🚀 Tecnologie principali
 
-- ⚙️ **Angular 17**
+- ⚙️ **Angular 20**
 - 🧠 **TypeScript**
 - 🎨 **HTML / SCSS**
 - 🧩 **Angular Material**
