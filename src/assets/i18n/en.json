@@ -37,5 +37,11 @@
       "learn_more": "Learn more",
       "view_all": "View all services >"
     }
-  }
+  },
+  "skills": {
+    "header": {
+      "title": "Skills",
+      "description": "Below you will find an overview of my technical and professional skills, developed over the years through real projects and passion. These skills allow me to create effective and creative solutions in the web world."
+    }
+}
 }
