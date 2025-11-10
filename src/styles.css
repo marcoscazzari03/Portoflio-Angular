@@ -1,8 +1,16 @@
 :root {
   --text-color: #1a1c20;
   --link-color: #4a76ee;
-  --background-color: #eeeff1;
+  --background-color: #f9f9f9;
+  --darkmode-text-color: #1a1c20;
 }
+
+.dark-mode {
+  --text-color: #eeeff1;
+  --background-color: #1a1c20;
+  --darkmode-text-color: #eeeff1;
+}
+
 
 * {
   margin: 0;
@@ -18,10 +26,12 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: var(--background-color);
   color: var(--text-color);
   max-width: 1400px;
   margin: 0 auto;
   padding: 0;
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
 
 ::-webkit-scrollbar {

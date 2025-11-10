@@ -20,9 +20,12 @@
         <span>Email</span>
       </a>
 
-      <!-- ✅ Pulsante cambio lingua -->
       <button (click)="switchLanguage()" class="lang-btn">
         🌐 {{ currentLang === 'it' ? 'English' : 'Italiano' }}
+      </button>
+
+      <button class="dark-mode-btn" (click)="toggleDarkMode()">
+        <i [class]="isDarkMode ? 'fa-solid fa-sun' : 'fa-solid fa-moon'"></i>
       </button>
     </div>
   </nav>

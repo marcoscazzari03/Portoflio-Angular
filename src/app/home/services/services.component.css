@@ -82,6 +82,7 @@
   font-size: 20px;
   font-weight: 700;
   margin: 10px 0;
+  color: black;
 }
 
 .service-box p {
@@ -119,7 +120,7 @@
 }
 
 .view-all {
-  background-color: #0d1a2b;
+  background-color: var(--link-color);
   color: white;
   padding: 14px 28px;
   border-radius: 8px;
@@ -130,7 +131,8 @@
 }
 
 .view-all:hover {
-  background-color: var(--link-color);
+  background-color: var(--darkmode-text-color);
+  color: black;
 }
 
 /* Responsive */

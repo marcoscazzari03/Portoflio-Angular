@@ -1,9 +1,9 @@
 .footer {
-  background-color: #fff;
+  background-color: var(--background-color);
   text-align: center;
   padding: 2rem 1rem;
   font-family: Arial, sans-serif;
-  color: #000;
+  color: var(--background-color);
 }
 
 .social-icons {
@@ -37,7 +37,7 @@
 
 .footer-nav a {
   margin: 0 15px;
-  color: #000;
+  color: var(--link-color);
   text-decoration: none;
   font-weight: 500;
 }
