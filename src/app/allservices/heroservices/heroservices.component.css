@@ -65,7 +65,7 @@
 }
 
 .service-list li a {
-  color: black;
+  color: var(--darkmode-text-color);
   font-size: 1rem;
   transition: transform 0.3s ease;
   display: inline-block;
@@ -78,7 +78,7 @@
 .fa-solid.fa-chevron-right {
   font-size: 15px;
   margin-right: 10px;
-  color: #0d1a2b;
+  color: var(--darkmode-text-color);
   text-shadow: 0.5px 0 #0d1a2b, -0.5px 0 #0d1a2b, 0 0.5px #0d1a2b,
     0 -0.5px #0d1a2b;
   transition: color 0.3s ease;

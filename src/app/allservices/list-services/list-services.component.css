@@ -9,11 +9,11 @@ a {
   grid-template-columns: repeat(2, 1fr);
   gap: 50px;
   padding: 60px 10%;
-  background: #fff;
+  background: var(--background-color);
 }
 
 .service-box {
-  background: #fff;
+  background: var(--background-color);
   padding: 30px;
   border-radius: 10px;
   position: relative;
@@ -34,7 +34,7 @@ a {
 .service-box h3 {
   font-size: 30px;
   font-weight: 800;
-  color: #0d1a2b;
+  color: var(--darkmode-text-color);
   margin-bottom: 15px;
 }
 
@@ -47,7 +47,7 @@ a {
 
 .learn-more {
   font-weight: 700;
-  color: #0d1a2b;
+  color: var(--darkmode-text-color);
   text-decoration: none;
   position: relative;
   display: inline-block;

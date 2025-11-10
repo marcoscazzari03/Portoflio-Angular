@@ -7,8 +7,9 @@
 
 .dark-mode {
   --text-color: #eeeff1;
-  --background-color: #1a1c20;
+  --background-color: #0f0f14;
   --darkmode-text-color: #eeeff1;
+  --darkmode-background-color: #1a1a1f;
 }
 
 

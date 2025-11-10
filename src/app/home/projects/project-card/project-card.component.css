@@ -1,5 +1,5 @@
 .project-card {
-  background-color: #f9f9f9;
+  background-color: var(--darkmode-background-color);
   border: 1px solid var(--link-color);
   border-radius: 16px;
   padding: 20px;
@@ -42,13 +42,13 @@
   font-size: 30px;
   margin: 10px 0;
   text-align: center;
-  color: black;
+  color:var(--text-color);
   letter-spacing: -1px !important;
 }
 
 .project-card p {
   font-size: 0.9rem;
-  color: black;
+  color: var(--text-color);
   margin-bottom: 20px;
   text-align: center;
 }
@@ -62,7 +62,7 @@
 }
 
 .project-card .tag {
-  background-color: #fff;
+  background-color: var(--darkmode-background-color);
   color: var(--link-color);
   font-weight: 600;
   font-size: 0.85rem;

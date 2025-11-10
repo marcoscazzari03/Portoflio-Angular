@@ -100,7 +100,8 @@
 }
 
 .cv:hover {
-  background-color: white;
+  background-color: var(--background-color);
+  color:red;
   transform: scale(1.05);
 }
 
