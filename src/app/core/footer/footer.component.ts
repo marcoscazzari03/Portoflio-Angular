@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
 import { AnalyticsService } from '../../analytics.service';
+import { TranslateModule } from '@ngx-translate/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './footer.component.html',
-  styleUrl: './footer.component.css',
+  styleUrls: ['./footer.component.css']
 })
 export class FooterComponent {
   constructor(private analytics: AnalyticsService) {}
@@ -14,7 +16,10 @@ export class FooterComponent {
   goToLinkedin() {
     this.analytics.openLinkedin();
   }
+
   goToGithub() {
     this.analytics.openGithub();
   }
+
+  currentYear = new Date().getFullYear();
 }

@@ -1,17 +1,21 @@
 <footer class="footer">
   <div class="social-icons">
-    <a (click)="goToGithub()" class="external-link"
-      ><i class="fab fa-github"></i
-    ></a>
-    <a (click)="goToLinkedin()" class="external-link"
-      ><i class="fab fa-linkedin-in"></i
-    ></a>
+    <a (click)="goToGithub()" class="external-link" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+    <a (click)="goToLinkedin()" class="external-link" aria-label="LinkedIn">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
   </div>
+
   <div class="footer-nav">
-    <a href="#skills">Skills</a>
-    <a href="#testimony">Referenze</a>
-    <a href="#">Su di me</a>
-    <a href="#contact">Contatto</a>
+    <a href="#skills">{{ 'footer.links.skills' | translate }}</a>
+    <a href="#testimony">{{ 'footer.links.testimony' | translate }}</a>
+    <a href="#about">{{ 'footer.links.about' | translate }}</a>
+    <a href="#contact">{{ 'footer.links.contact' | translate }}</a>
   </div>
-  <p class="footer-credit">© Marco Scazzari | Tutti i diritti riservati</p>
+
+  <p class="footer-credit">
+    © {{ currentYear }} Marco Scazzari | {{ 'footer.rights' | translate }}
+  </p>
 </footer>

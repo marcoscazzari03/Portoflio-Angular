@@ -106,5 +106,14 @@
       "error": "Error sending message. Please try again.",
       "network": "Connection error. Please try again."
     }
+  },
+  "footer": {
+    "links": {
+      "skills": "Skills",
+      "testimony": "References",
+      "about": "About Me",
+      "contact": "Contact"
+    },
+    "rights": "All rights reserved"
   }
 }

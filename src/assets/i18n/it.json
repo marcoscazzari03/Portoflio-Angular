@@ -106,5 +106,14 @@
       "error": "Errore durante l’invio del messaggio. Riprova.",
       "network": "Errore di connessione. Riprova."
     }
+  },
+    "footer": {
+    "links": {
+      "skills": "Competenze",
+      "testimony": "Referenze",
+      "about": "Su di me",
+      "contact": "Contatto"
+    },
+    "rights": "Tutti i diritti riservati"
   }
 }
