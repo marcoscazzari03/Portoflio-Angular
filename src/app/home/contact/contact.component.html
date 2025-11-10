@@ -1,64 +1,48 @@
 <section id="contact" class="contact-section">
   <div class="group">
     <div class="text">
-      <h2>Contattami</h2>
-      Se hai un progetto da proporre, un’idea da discutere o semplicemente vuoi
-      metterti in contatto con me, sarò felice di ascoltarti.
+      <h2>{{ 'contact.header.title' | translate }}</h2>
+      {{ 'contact.header.paragraph1' | translate }}
       <br /><br />
-      Collaborazioni, consulenze, richieste tecniche o scambi di opinioni sono
-      sempre benvenuti. Lavoro con passione e attenzione ai dettagli.
+      {{ 'contact.header.paragraph2' | translate }}
       <br /><br />
-      Puoi contattarmi direttamente via email oppure utilizzare il modulo
-      disponibile sul sito. Rispondo in tempi brevi.
+      {{ 'contact.header.paragraph3' | translate }}
     </div>
 
     <div class="form-container">
-      <div
-        *ngIf="successMessage; else contactFormBlock"
-        class="success-message fade-in"
-      >
-        {{ successMessage }}
+      <div *ngIf="successMessage; else contactFormBlock" class="success-message fade-in">
+        {{ successMessage | translate }}
       </div>
 
       <ng-template #contactFormBlock>
         <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-          <input
-            type="text"
-            id="name"
-            formControlName="name"
-            placeholder="Nome"
-          />
+          <input type="text" id="name" formControlName="name" [placeholder]="'contact.form.name' | translate" />
           <div *ngIf="showError('name')" class="error">
-            Il nome è obbligatorio.
+            {{ 'contact.errors.name_required' | translate }}
           </div>
 
-          <input
-            type="email"
-            id="email"
-            formControlName="email"
-            placeholder="Email"
-          />
+          <input type="email" id="email" formControlName="email" [placeholder]="'contact.form.email' | translate" />
           <div *ngIf="showError('email')" class="error">
-            <span *ngIf="contactForm.get('email')?.errors?.['required']"
-              >L'email è obbligatoria.</span
-            >
-            <span *ngIf="contactForm.get('email')?.errors?.['email']"
-              >Inserisci un'email valida.</span
-            >
+            <span *ngIf="contactForm.get('email')?.errors?.['required']">
+              {{ 'contact.errors.email_required' | translate }}
+            </span>
+            <span *ngIf="contactForm.get('email')?.errors?.['email']">
+              {{ 'contact.errors.email_invalid' | translate }}
+            </span>
           </div>
 
           <textarea
             id="message"
             rows="6"
             formControlName="message"
-            placeholder="Messaggio"
-          ></textarea>
+            [placeholder]="'contact.form.message' | translate">
+          </textarea>
           <div *ngIf="showError('message')" class="error">
-            Il messaggio è obbligatorio.
+            {{ 'contact.errors.message_required' | translate }}
           </div>
 
           <button type="submit" [disabled]="contactForm.invalid">
-            Manda Messaggio
+            {{ 'contact.form.send' | translate }}
           </button>
         </form>
       </ng-template>

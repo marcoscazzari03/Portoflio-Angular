@@ -3,16 +3,17 @@ import {
   FormBuilder,
   FormGroup,
   Validators,
-  ReactiveFormsModule,
+  ReactiveFormsModule
 } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule],
+  imports: [CommonModule, ReactiveFormsModule, TranslateModule],
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.css'],
+  styleUrls: ['./contact.component.css']
 })
 export class ContactComponent {
   contactForm: FormGroup;
@@ -22,14 +23,13 @@ export class ContactComponent {
     this.contactForm = this.fb.group({
       name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
-      message: ['', Validators.required],
+      message: ['', Validators.required]
     });
   }
 
   onSubmit(): void {
     if (this.contactForm.valid) {
       const formData = this.contactForm.value;
-
       const formPayload = new FormData();
       formPayload.append('name', formData.name);
       formPayload.append('email', formData.email);
@@ -38,25 +38,19 @@ export class ContactComponent {
       fetch('https://formspree.io/f/xblyenoy', {
         method: 'POST',
         body: formPayload,
-        headers: {
-          Accept: 'application/json',
-        },
+        headers: { Accept: 'application/json' }
       })
-        .then((response) => {
+        .then(response => {
           if (response.ok) {
-            this.successMessage =
-              'Messaggio inviato con successo! Riceverai il prima possibile una mail di risposta';
+            this.successMessage = 'contact.messages.success';
             this.contactForm.reset();
-
             setTimeout(() => (this.successMessage = ''), 5000);
           } else {
-            this.successMessage =
-              'Errore durante l’invio del messaggio. Riprova.';
+            this.successMessage = 'contact.messages.error';
           }
         })
-        .catch((error) => {
-          console.error('Errore invio:', error);
-          this.successMessage = 'Errore di connessione. Riprova.';
+        .catch(() => {
+          this.successMessage = 'contact.messages.network';
         });
     }
   }

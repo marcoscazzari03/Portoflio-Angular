@@ -4,7 +4,7 @@
     "prefix": "The",
     "title": "brings real results",
     "role": "Junior Web Developer",
-    "description": "passionate about technology and web development. I approach each project with enthusiasm, curiosity, and determination, always seeking new challenges to grow both technically and personally. I collaborate with a team spirit and use my skills to achieve concrete goals together."
+    "description": "Passionate about technology and web development. I approach each project with enthusiasm, curiosity, and determination, always seeking new challenges to grow both technically and personally. I collaborate with a team spirit and use my skills to achieve concrete goals together."
   },
   "links": {
     "cv": "Download CV",
@@ -42,8 +42,19 @@
     "header": {
       "title": "Skills",
       "description": "Below you will find an overview of my technical and professional skills, developed over the years through real projects and passion. These skills allow me to create effective and creative solutions in the web world."
+    },
+    "list": {
+      "html": "HTML",
+      "css": "CSS",
+      "javascript": "JavaScript",
+      "node": "Node.js",
+      "angular": "Angular",
+      "wordpress": "WordPress",
+      "php": "PHP",
+      "googleam": "Google AM",
+      "docker": "Docker"
     }
-},
+  },
   "projects": {
     "header": {
       "title": "Main Projects"
@@ -70,5 +81,30 @@
         "description": "During the Udemy course I developed a complete Angular project, applying key concepts such as components, routing, and services, improving my practical skills."
       }
     }
-}
+  },
+  "contact": {
+    "header": {
+      "title": "Contact Me",
+      "paragraph1": "If you have a project to propose, an idea to discuss, or simply want to get in touch, I’ll be happy to hear from you.",
+      "paragraph2": "Collaborations, consulting, technical requests or sharing ideas are always welcome. I work with passion and attention to detail.",
+      "paragraph3": "You can contact me directly by email or use the form available on the site. I respond quickly."
+    },
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "send": "Send Message"
+    },
+    "errors": {
+      "name_required": "Name is required.",
+      "email_required": "Email is required.",
+      "email_invalid": "Please enter a valid email.",
+      "message_required": "Message is required."
+    },
+    "messages": {
+      "success": "Message sent successfully! You’ll receive a reply as soon as possible.",
+      "error": "Error sending message. Please try again.",
+      "network": "Connection error. Please try again."
+    }
+  }
 }
