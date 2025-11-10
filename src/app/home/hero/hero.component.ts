@@ -16,7 +16,7 @@ import { GaEventDirective } from '../../directives/ga-event.directive';
 export class HeroComponent implements OnInit {
   links = HERO_LINKS;
 
-  texts: string[] = ['web developer', 'web designer', 'seo specialist', 'copywriter', 'frontend developer'];
+  texts: string[] = ['web developer', 'web designer', 'seo specialist', 'sistemista', 'backend developer'];
   currentText = '';
   currentWordIndex = 0;
   currentCharIndex = 0;
