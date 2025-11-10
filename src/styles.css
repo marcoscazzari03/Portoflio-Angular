@@ -12,6 +12,8 @@
 
 html {
   scroll-behavior: auto;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -19,6 +21,7 @@ body {
   color: var(--text-color);
   max-width: 1400px;
   margin: 0 auto;
+  padding: 0;
 }
 
 ::-webkit-scrollbar {
