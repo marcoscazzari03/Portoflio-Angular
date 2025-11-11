@@ -131,8 +131,8 @@
 }
 
 .view-all:hover {
-  background-color: var(--darkmode-text-color);
-  color: black;
+  background-color: var(--text-color);
+  color: var(--background-color);
 }
 
 /* Responsive */

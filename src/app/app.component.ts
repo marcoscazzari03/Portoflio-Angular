@@ -22,9 +22,13 @@ export class AppComponent {
   constructor(private router: Router, private renderer: Renderer2) {
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
+        // 🔹 Google Analytics tracking
         gtag('config', 'G-K77R71FWFY', {
           page_path: event.urlAfterRedirects,
         });
+
+        // 🔹 Scroll automatico in cima a ogni cambio pagina
+        window.scrollTo({ top: 0, behavior: 'smooth' });
       }
     });
   }
@@ -35,16 +39,8 @@ export class AppComponent {
     this.mouseY = event.clientY;
 
     if (this.tooltipElement) {
-      this.renderer.setStyle(
-        this.tooltipElement,
-        'top',
-        `${this.mouseY - 30}px`
-      );
-      this.renderer.setStyle(
-        this.tooltipElement,
-        'left',
-        `${this.mouseX + 10}px`
-      );
+      this.renderer.setStyle(this.tooltipElement, 'top', `${this.mouseY - 30}px`);
+      this.renderer.setStyle(this.tooltipElement, 'left', `${this.mouseX + 10}px`);
     }
   }
 
